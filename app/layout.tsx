@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
+import NavBar from '../components/navbar/NavBar';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +18,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <NavBar />
+        <main className="p-2 bg-gray-900 font-mono">{children}</main>
+        <footer className="p-4 bg-gray-100 dark:bg-gray-900 text-center">
+          © 2024 Your Name. All rights reserved.
+        </footer>
+      </body>
     </html>
   );
 }
