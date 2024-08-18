@@ -110,7 +110,7 @@ const Chat = ({
     );
     const stream = response.body
       ? AssistantStream.fromReadableStream(response.body)
-      : null;
+      : AssistantStream.fromReadableStream(new ReadableStream());
     handleReadableStream(stream);
   };
 
