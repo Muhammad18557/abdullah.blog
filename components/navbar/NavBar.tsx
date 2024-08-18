@@ -37,7 +37,7 @@ export default function Navbar() {
           Blog
         </Link>
         <Link
-          href="/ask-ai"
+          href="/askai"
           className="m-4 text-lg hover:text-blue-500 transition duration-300"
         >
           Ask AI
