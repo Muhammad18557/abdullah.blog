@@ -83,7 +83,7 @@ export default function Skills() {
 
   useEffect(() => {
     spheres.forEach((type) => {
-      const sphere = document.querySelector(`.sphere-${type}`);
+      const sphere = document.querySelector(`.sphere-${type}`) as HTMLElement;
       const icons = document.querySelectorAll(`.icon-${type}`);
 
       let angle = 0;
@@ -93,12 +93,15 @@ export default function Skills() {
 
       icons.forEach((icon, index) => {
         const currentAngle = index * angleIncrement;
-        icon.style.transform = `rotateY(${currentAngle}deg) translateZ(300px)`; // Wider circle with increased Z value
+        // Cast icon to HTMLElement to access the style property
+        (icon as HTMLElement).style.transform = `rotateY(${currentAngle}deg) translateZ(300px)`; // Wider circle with increased Z value
       });
 
       function rotateSphere() {
         angle += speed;
-        sphere.style.transform = `rotateY(${angle}deg)`;
+        if (sphere) {
+          sphere.style.transform = `rotateY(${angle}deg)`;
+        }
         requestAnimationFrame(rotateSphere);
       }
 
