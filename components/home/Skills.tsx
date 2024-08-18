@@ -78,28 +78,32 @@ const techStacks = [
     type: "framework",
   },
 ];
+
 export default function Skills() {
   const spheres = ["language", "framework"]; // Types of spheres
 
   useEffect(() => {
     spheres.forEach((type) => {
-      const sphere = document.querySelector(`.sphere-${type}`) as HTMLElement;
+      const sphere = document.querySelector(
+        `.sphere-${type}`
+      ) as HTMLElement | null;
       const icons = document.querySelectorAll(`.icon-${type}`);
 
       let angle = 0;
-      let speed = 0.05;
+      const speed = 0.05;
       const totalIcons = icons.length;
       const angleIncrement = 360 / totalIcons;
 
       icons.forEach((icon, index) => {
         const currentAngle = index * angleIncrement;
-        // Cast icon to HTMLElement to access the style property
-        (icon as HTMLElement).style.transform = `rotateY(${currentAngle}deg) translateZ(300px)`; // Wider circle with increased Z value
+        if (icon instanceof HTMLElement) {
+          icon.style.transform = `rotateY(${currentAngle}deg) translateZ(300px)`; // Wider circle with increased Z value
+        }
       });
 
       function rotateSphere() {
-        angle += speed;
         if (sphere) {
+          angle += speed;
           sphere.style.transform = `rotateY(${angle}deg)`;
         }
         requestAnimationFrame(rotateSphere);
