@@ -31,3 +31,51 @@ body {
     text-wrap: balance;
   }
 }
+.sphere {
+  width: 400px;
+  height: 200px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  animation: rotate 20s infinite linear;
+  /* border: 1px solid red; */
+  border-radius: 100% 100% 100% 100%;
+}
+
+/* Reduce vertical space between spheres */
+.sphere-container {
+  margin-bottom: 20px; /* Adjust this value to reduce vertical spacing */
+}
+
+.icon img {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+/* Position icons around the sphere dynamically */
+.icon {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform-origin: 0 0;
+  text-align: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.icon img {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+}

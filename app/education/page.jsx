@@ -66,7 +66,6 @@ const educationData = [
 export default function Education() {
   return (
     <div className="min-h-screen bg-gray-900 text-white p-6">
-      <h2 className="text-4xl font-bold text-center mb-12">Education</h2>
       <div className="space-y-8">
         {educationData.map((edu) => (
           <SchoolCard
