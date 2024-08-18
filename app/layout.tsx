@@ -21,9 +21,9 @@ export default function RootLayout({
       <body className={inter.className}>
         <NavBar />
         <main className="p-2 bg-gray-900 font-mono">{children}</main>
-        <footer className="p-4 bg-gray-100 dark:bg-gray-900 text-center">
+        {/* <footer className="p-4 bg-gray-100 dark:bg-gray-900 text-center">
           © 2024 Your Name. All rights reserved.
-        </footer>
+        </footer> */}
       </body>
     </html>
   );

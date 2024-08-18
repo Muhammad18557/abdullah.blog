@@ -4,8 +4,8 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <AppBar position="static" className="font-mono">
-      <Toolbar className="flex justify-between space-x-8">
+    <AppBar position="static" className="font-mono bg-gray-900">
+      <Toolbar className="flex justify-end space-x-24">
         <Link
           href="/"
           className="m-4 text-lg hover:text-blue-500 transition duration-300"
@@ -37,8 +37,8 @@ export default function Navbar() {
           Blog
         </Link>
         <Link
-          href="/askai"
-          className="m-4 text-lg hover:text-blue-500 transition duration-300"
+          href="/ask.ai"
+          className="m-4 text-lg hover:text-blue-500 transition duration-300 border-blue-500 border-2 rounded-[60px] px-4 py-2"
         >
           Ask AI
         </Link>
