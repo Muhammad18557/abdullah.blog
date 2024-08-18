@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import styles from "./Chat.module.css";
 import { AssistantStream } from "openai/lib/AssistantStream";
+// @ts-expect-error - no types for this yet
 import { AssistantStreamEvent } from "openai/resources/beta/assistants/assistants";
 import Markdown from "react-markdown";
 import { RequiredActionFunctionToolCall } from "openai/resources/beta/threads/runs/runs";
