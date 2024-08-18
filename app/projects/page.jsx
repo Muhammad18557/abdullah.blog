@@ -69,7 +69,7 @@ export default function Projects() {
     },
     {
       title: "BankGUI ",
-      githubLink: "https://github.com/yourusername/nocdoor",
+      githubLink: "https://github.com/Muhammad18557/BankGUI",
       demoLink: "",
       year: "2024",
       description:
@@ -80,7 +80,7 @@ export default function Projects() {
     },
     {
       title: "eGROCERY",
-      githubLink: "https://github.com/yourusername/nocdoor",
+      githubLink: "https://github.com/jakobnunnendorf/SE_egrocery",
       demoLink: "https://nocdoor-demo.com",
       year: "2022",
       description:
