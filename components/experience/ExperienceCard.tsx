@@ -9,6 +9,11 @@ import {
   ListItem,
 } from "@mui/material";
 
+interface Technology {
+  logo: string;
+  name: string;
+}
+
 interface ExperienceCardProps {
   jobTitle: string;
   companyName: string;
@@ -16,7 +21,7 @@ interface ExperienceCardProps {
   companyWebsite: string;
   duration: string;
   responsibilities: string[];
-  technologies: string[];
+  technologies: Technology[];
 }
 
 export default function ExperienceCard({
