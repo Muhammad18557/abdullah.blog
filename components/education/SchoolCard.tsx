@@ -45,9 +45,15 @@ export default function SchoolCard({
             </Typography>
           </div>
         </div>
-        <Typography variant="body1" className="mt-4 text-white">
+        
+        {/* Description Section */}
+        <Typography
+          variant="body1"
+          className="mt-4 p-4 bg-gray-700 text-gray-200 rounded-lg border border-gray-600"
+        >
           {description}
         </Typography>
+        
         {activities && (
           <List className="mt-4 space-y-1">
             {activities.map((activity, index) => (

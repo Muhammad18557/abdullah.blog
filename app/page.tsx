@@ -1,5 +1,12 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faLinkedin,
+  faGithub,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import TimeLine from "../components/home/TimeLine";
 import Skills from "../components/home/Skills";
 
@@ -51,8 +58,85 @@ export default function Home() {
           <img
             src="/headshots/abdullah-pic.jpg"
             alt="Muhammad Abdullah"
-            className="w-32 h-32 md:w-56 md:h-56 rounded-full object-cover"
+            className="w-32 h-32 md:w-60 md:h-60 rounded-full object-cover"
           />
+          <div className="mt-4 p-4 rounded-lg shadow-xl text-center">
+            <h3 className="text-xl font-bold mt-2 text-white">
+              Muhammad Abdullah
+            </h3>
+            <p className="text-md text-gray-400">SWE Intern @ Defog.ai</p>
+            <p className="text-md text-gray-400">CS @ YNC|NUS 2025</p>
+            <p className="text-md text-gray-400">Aitchison 2020</p>
+            <div className="flex items-center justify-center mt-2">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/3/32/Flag_of_Pakistan.svg"
+                alt="flag of Pakistan"
+                className="w-8 h-8 mr-4"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Singapore.svg"
+                alt="flag of Singapore"
+                className="w-8 h-8"
+              />
+            </div>
+          </div>
+
+          <div className="mt-4 flex justify-center">
+            <a
+              href="/path-to-resume.pdf"
+              className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition"
+            >
+              Resume
+            </a>
+          </div>
+          <div className="mt-6 flex items-center justify-center">
+            <div className="ml-4 flex space-x-4">
+              <a
+                href="https://www.linkedin.com/in/muhammad-abdullah-5a49741ba/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon
+                  icon={faLinkedin}
+                  size="2x"
+                  className="text-blue-500 hover:text-blue-700"
+                />
+              </a>
+              <a
+                href="https://github.com/Muhammad18557"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon
+                  icon={faGithub}
+                  size="2x"
+                  className="text-gray-300 hover:text-white"
+                />
+              </a>
+              <a
+                href="mailto:muhammad.abdullah@u.yale-nus.edu.sg"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon
+                  icon={faEnvelope}
+                  size="2x"
+                  className="text-gray-300 hover:text-white"
+                />
+              </a>
+              <a
+                href="https://www.instagram.com/abdullah_18557"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon
+                  icon={faInstagram}
+                  size="2x"
+                  className="text-pink-500 hover:text-pink-700"
+                />
+              </a>
+            </div>
+          </div>
         </div>
 
         {/* Text Section */}
@@ -61,9 +145,7 @@ export default function Home() {
             {displayText}
             <span className="blinking-cursor">!</span>
           </h2>
-          <h2 className="text-3xl md:text-3xl font-bold mb-4">
-            I'm Muhammad Abdullah
-          </h2>
+          <h2 className="text-3xl md:text-3xl font-bold mb-4">I'm Abdullah</h2>
           <p className="text-lg md:text-xl mb-4">
             Software Engineering and Machine Learning enthusiast
           </p>
@@ -80,14 +162,54 @@ export default function Home() {
             and fan, and I like to unwind with swimming and squash in my free
             time.
           </p>
-          <div className="mt-6">
-            <a
-              href="/path-to-resume.pdf"
-              className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition"
-            >
-              Resume
-            </a>
-          </div>
+          {/* <div className="mt-6 flex items-center">
+            <div className="ml-4 flex space-x-4">
+              <a
+                href="https://www.linkedin.com/in/muhammad-abdullah-5a49741ba/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon
+                  icon={faLinkedin}
+                  size="2x"
+                  className="text-blue-500 hover:text-blue-700"
+                />
+              </a>
+              <a
+                href="https://github.com/Muhammad18557"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon
+                  icon={faGithub}
+                  size="2x"
+                  className="text-gray-300 hover:text-white"
+                />
+              </a>
+              <a
+                href="mailto:muhammad.abdullah@u.yale-nus.edu.sg"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon
+                  icon={faEnvelope}
+                  size="2x"
+                  className="text-gray-300 hover:text-white"
+                />
+              </a>
+              <a
+                href="https://www.instagram.com/abdullah_18557"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon
+                  icon={faInstagram}
+                  size="2x"
+                  className="text-pink-500 hover:text-pink-700"
+                />
+              </a>
+            </div>
+          </div> */}
         </div>
       </div>
 
