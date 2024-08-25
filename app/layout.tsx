@@ -2,13 +2,14 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
-import NavBar from '../components/navbar/NavBar';
+import NavBar from "../components/navbar/NavBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Abdullah's Portfolio",
-  description: "This is the portfolio of Muhammad Abdullah",
+  title: "Abdullah's Digital Playground",
+  description:
+    "Discover the journey of Muhammad Abdullah, where passion meets technology and every project is a step toward learning and growth.",
 };
 
 export default function RootLayout({

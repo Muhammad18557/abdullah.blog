@@ -93,7 +93,7 @@ export default function Home() {
 
       <Skills />
 
-      <TimeLine />
+      {/* <TimeLine /> */}
     </div>
   );
 }

@@ -122,7 +122,7 @@ export default function Skills() {
       {spheres.map((type) => (
         <div key={type} className="sphere-container">
           <h4 className="text-xl font-bold text-center capitalize">
-            {type + "s"}
+            {type === "language" ? "Languages" : "Frameworks and Tools"}
           </h4>
           <div className={`sphere sphere-${type}`}>
             {techStacks
