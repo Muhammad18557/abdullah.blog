@@ -21,7 +21,7 @@ export default function SchoolCard({
   activities,
 }: SchoolCardProps) {
   return (
-    <Card className="bg-gray-800 text-white rounded-lg shadow-md overflow-hidden mb-6">
+    <Card className="bg-gray-800 text-white rounded-lg shadow-md overflow-hidden mb-6 md:w-10/12 mx-auto">
       <CardContent>
         <div className="flex flex-col md:flex-row items-center">
           <Link href={link} target="_blank" rel="noopener" className="flex items-center mr-4">

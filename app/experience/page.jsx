@@ -13,7 +13,7 @@ const experienceData = [
     responsibilities: [
       "Revamped the Next.js frontend of defog self hosted platform to improve user experience and performance.",
       "Implemented recommendation features that use past negative feedback to suggest tailored improvements to users.",
-      "Used Slack's API to promopt and receive feedback through the company's slack app and allow asking of follow up questions via slack threads.",
+      "Used Slack's API to prompt and receive feedback through the company's slack app and allow asking of follow up questions via slack threads.",
     ],
     technologies: [
       {
