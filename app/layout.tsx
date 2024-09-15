@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import NavBar from "../components/navbar/NavBar";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,6 +26,7 @@ export default function RootLayout({
         {/* <footer className="p-4 bg-gray-900 dark:bg-gray-900 text-center text-white">
           © 2024 Abdullah. All rights reserved.
         </footer> */}
+        <Analytics />
       </body>
     </html>
   );
