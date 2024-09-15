@@ -95,6 +95,7 @@ export default function Home() {
                 href="https://www.linkedin.com/in/muhammad-abdullah-5a49741ba/"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="transform hover:scale-125 transition duration-300"
               >
                 <FontAwesomeIcon
                   icon={faLinkedin}
@@ -106,6 +107,7 @@ export default function Home() {
                 href="https://github.com/Muhammad18557"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="transform hover:scale-125 transition duration-300"
               >
                 <FontAwesomeIcon
                   icon={faGithub}
@@ -117,6 +119,7 @@ export default function Home() {
                 href="mailto:muhammad.abdullah@u.yale-nus.edu.sg"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="transform hover:scale-125 transition duration-300"
               >
                 <FontAwesomeIcon
                   icon={faEnvelope}
@@ -128,6 +131,7 @@ export default function Home() {
                 href="https://www.instagram.com/abdullah_18557"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="transform hover:scale-125 transition duration-300"
               >
                 <FontAwesomeIcon
                   icon={faInstagram}
