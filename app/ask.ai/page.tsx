@@ -8,7 +8,7 @@ const AskAI = () => {
   return (
     <main className={styles.main}>
       <div className={styles.container}>
-        <h1 className="text-2xl text-white text-center mt-4 mb-4">Chat with Abdullah's AI assistant</h1>
+        <h1 className="text-xl md:text-2xl text-white text-center mt-4 mb-4">Chat with Abdullah's AI assistant</h1>
         <Chat />
       </div>
     </main>
