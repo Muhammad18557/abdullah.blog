@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Abdullah's Digital Playground",
   description:
-    "Discover the journey of Muhammad Abdullah, where passion meets technology and every project is a step toward learning and growth.",
+    "Discover the journey of Muhammad Abdullah in the world of software development.",
 };
 
 export default function RootLayout({
@@ -22,8 +22,8 @@ export default function RootLayout({
       <body className={inter.className}>
         <NavBar />
         <main className="p-2 bg-gray-900 font-mono">{children}</main>
-        {/* <footer className="p-4 bg-gray-100 dark:bg-gray-900 text-center">
-          © 2024 Your Name. All rights reserved.
+        {/* <footer className="p-4 bg-gray-900 dark:bg-gray-900 text-center text-white">
+          © 2024 Abdullah. All rights reserved.
         </footer> */}
       </body>
     </html>

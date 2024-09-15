@@ -112,7 +112,6 @@ export default function Skills() {
       rotateSphere();
     });
   }, []);
-
   return (
     <div className="skills-container mt-10">
       <h3 className="text-2xl md:text-3xl font-bold mb-4 text-center">
@@ -120,17 +119,26 @@ export default function Skills() {
       </h3>
 
       {spheres.map((type) => (
-        <div key={type} className="sphere-container">
-          <h4 className="text-xl font-bold text-center capitalize">
+        <div key={type} className="sphere-container mb-6">
+          <h4 className="text-xl font-bold text-center capitalize mb-4">
             {type === "language" ? "Languages" : "Frameworks and Tools"}
           </h4>
-          <div className={`sphere sphere-${type}`}>
+          <div
+            className={`sphere sphere-${type} flex flex-wrap justify-center items-center`}
+          >
             {techStacks
               .filter((skill) => skill.type === type)
               .map((skill, index) => (
-                <div key={index} className={`icon icon-${type}`}>
-                  <img src={skill.logo} alt={skill.name} />
-                  <p>{skill.name}</p>
+                <div
+                  key={index}
+                  className={`icon icon-${type} w-20 h-20 flex flex-col items-center justify-center m-2`}
+                >
+                  <img
+                    src={skill.logo}
+                    alt={skill.name}
+                    className="w-10 h-10"
+                  />
+                  <p className="text-sm mt-2">{skill.name}</p>
                 </div>
               ))}
           </div>

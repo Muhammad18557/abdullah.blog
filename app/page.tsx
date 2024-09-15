@@ -52,13 +52,13 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gray-900 flex flex-col items-center text-white w-full mt-10">
       {/* Main Content */}
-      <div className="flex flex-col items-center md:flex-row md:items-center md:justify-center w-full">
+      <div className="flex flex-col md:flex-row items-center justify-center w-full">
         {/* Image Section */}
-        <div className="mb-6 md:mb-0 md:mr-12 flex-shrink-0 self-start">
+        <div className="mb-6 md:mb-0 md:mr-12 flex-shrink-0 self-center">
           <img
             src="/headshots/abdullah-pic.jpg"
             alt="Muhammad Abdullah"
-            className="w-32 h-32 md:w-60 md:h-60 rounded-full object-cover"
+            className="w-60 h-60 rounded-full object-cover"
           />
           <div className="mt-4 p-4 rounded-lg shadow-xl text-center">
             <h3 className="text-xl font-bold mt-2 text-white">
@@ -95,6 +95,7 @@ export default function Home() {
                 href="https://www.linkedin.com/in/muhammad-abdullah-5a49741ba/"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="transform hover:scale-125 transition duration-300"
               >
                 <FontAwesomeIcon
                   icon={faLinkedin}
@@ -106,6 +107,7 @@ export default function Home() {
                 href="https://github.com/Muhammad18557"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="transform hover:scale-125 transition duration-300"
               >
                 <FontAwesomeIcon
                   icon={faGithub}
@@ -117,6 +119,7 @@ export default function Home() {
                 href="mailto:muhammad.abdullah@u.yale-nus.edu.sg"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="transform hover:scale-125 transition duration-300"
               >
                 <FontAwesomeIcon
                   icon={faEnvelope}
@@ -128,6 +131,7 @@ export default function Home() {
                 href="https://www.instagram.com/abdullah_18557"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="transform hover:scale-125 transition duration-300"
               >
                 <FontAwesomeIcon
                   icon={faInstagram}
@@ -140,7 +144,7 @@ export default function Home() {
         </div>
 
         {/* Text Section */}
-        <div className="text-center md:text-left max-w-xl">
+        <div className="text-center md:text-left max-w-xl mt-8 md:mt-0">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             {displayText}
             <span className="blinking-cursor">!</span>
@@ -149,7 +153,7 @@ export default function Home() {
           <p className="text-lg md:text-xl mb-4">
             Software Engineering and Machine Learning enthusiast
           </p>
-          <p className="text-lg text-gray-400">
+          <p className="text-lg text-gray-400 text-justify p-2">
             I am a computer science student at the Yale-NUS College of the
             National University of Singapore specializing in software
             engineering. I am passionate about using technology to make a
@@ -162,54 +166,6 @@ export default function Home() {
             and fan, and I like to unwind with swimming and squash in my free
             time.
           </p>
-          {/* <div className="mt-6 flex items-center">
-            <div className="ml-4 flex space-x-4">
-              <a
-                href="https://www.linkedin.com/in/muhammad-abdullah-5a49741ba/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon
-                  icon={faLinkedin}
-                  size="2x"
-                  className="text-blue-500 hover:text-blue-700"
-                />
-              </a>
-              <a
-                href="https://github.com/Muhammad18557"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon
-                  icon={faGithub}
-                  size="2x"
-                  className="text-gray-300 hover:text-white"
-                />
-              </a>
-              <a
-                href="mailto:muhammad.abdullah@u.yale-nus.edu.sg"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon
-                  icon={faEnvelope}
-                  size="2x"
-                  className="text-gray-300 hover:text-white"
-                />
-              </a>
-              <a
-                href="https://www.instagram.com/abdullah_18557"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon
-                  icon={faInstagram}
-                  size="2x"
-                  className="text-pink-500 hover:text-pink-700"
-                />
-              </a>
-            </div>
-          </div> */}
         </div>
       </div>
 
