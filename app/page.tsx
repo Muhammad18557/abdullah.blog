@@ -154,7 +154,7 @@ export default function Home() {
             Software Engineering and Machine Learning enthusiast
           </p>
           <p className="text-lg text-gray-400 text-justify p-2">
-            I am a computer science student at the Yale-NUS College of the
+            I am a computer science student at Yale-NUS College of the
             National University of Singapore specializing in software
             engineering. I am passionate about using technology to make a
             positive impact on the world and strive to be a valuable asset to
